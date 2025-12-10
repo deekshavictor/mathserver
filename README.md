@@ -167,8 +167,10 @@ def power(request):
 
 
 # SERVER SIDE PROCESSING:
-(<Screenshot 2025-12-09 215642.png>)
+![alt text](<Screenshot 2025-12-09 215257.png>)
+
 # OUTPUT:
-(<Screenshot 2025-12-09 215257.png>)
+![alt text](<Screenshot 2025-12-09 215257.png>)
+
 # RESULT:
 The program for performing server side processing is completed successfully.
