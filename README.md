@@ -167,7 +167,8 @@ def power(request):
 
 
 # SERVER SIDE PROCESSING:
-![alt text](<Screenshot 2025-12-09 215257.png>)
+![alt text](<Screenshot 2025-12-09 215642.png>)
+
 
 # OUTPUT:
 ![alt text](<Screenshot 2025-12-09 215257.png>)
