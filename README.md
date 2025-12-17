@@ -1,13 +1,13 @@
 # Ex.05 Design a Website for Server Side Processing
-# Date:
+# Date:10.12.2025
 # AIM:
 To design a website to calculate the power of a lamp filament in an incandescent bulb in the server side.
 
 # FORMULA:
 P = I2R
 P --> Power (in watts)
- I --> Intensity
- R --> Resistance
+I --> Intensity
+R --> Resistance
 
 # DESIGN STEPS:
 ## Step 1:
@@ -29,8 +29,7 @@ Create a HTML file to implement form based input and output.
 Publish the website in the given URL.
 
 # PROGRAM :
-'''
-{% load static %}
+```
 <html>
 <head>
     <title>Power Calculation</title>
@@ -57,8 +56,6 @@ Publish the website in the given URL.
             box-shadow: 0 8px 25px rgba(35, 220, 18, 0.4);
             
         }
-
-        
 
         h1{
             font-size: 38px;
@@ -99,10 +96,6 @@ Publish the website in the given URL.
         button:hover{
             background:#ff8767;
         }
-
-       
-        
-
     </style>
 </head>
 
@@ -131,24 +124,21 @@ Publish the website in the given URL.
 </div>
 </body>
 </html>
-'''
-'''
+```
+```
 urls.py
-
 
 from django.contrib import admin
 from django.urls import path
 from powerapp import views
-
-
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.power,name='power'),
     
 ]
-'''
-'''
+```
+```
 views.py
 
 from django.shortcuts import render
@@ -161,17 +151,11 @@ def power(request):
         print(f"Intensity: {intensity}, Resistance: {resistance},Power:{power:.2f}")
     return render(request, 'math.html', {'power': power})
 
-'''
-
-
-
+```
 
 # SERVER SIDE PROCESSING:
-![alt text](<Screenshot 2025-12-09 215642.png>)
-
-
-# OUTPUT:
 ![alt text](<Screenshot 2025-12-09 215257.png>)
+![alt text](<Screenshot 2025-12-09 215642.png>)
 
 # RESULT:
 The program for performing server side processing is completed successfully.
